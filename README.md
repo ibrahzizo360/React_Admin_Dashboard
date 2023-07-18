@@ -27,6 +27,7 @@ This is a robust admin dashboard developed using React, engineered to optimize y
 ## Project Demonstration
 
 
+https://github.com/ibrahzizo360/React_Admin_Dashboard/assets/92813019/86905bbc-2b7a-40a7-9755-ed8ec7d4e27f
 
 
 
