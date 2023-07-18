@@ -21,12 +21,27 @@ display: flex;
     .left {
         flex: 1;
         text-align: center;
-
+        
         img {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
         border-radius: 50%;
         object-fit: cover;
+        }
+
+        .formInput{
+            position: relative;
+            margin-top: 20px;
+            margin-left: -20px;
+
+            .icon {
+                cursor: pointer;
+                margin-left: 12px;
+                position: absolute;
+                top: -5px;
+                height: 30px;
+                width: 30px;
+            }
         }
     }
 
@@ -46,10 +61,6 @@ display: flex;
             display: flex;
             align-items: center;
             gap: 10px;
-
-            .icon {
-                cursor: pointer;
-            }
             }
 
             input {
@@ -57,6 +68,10 @@ display: flex;
             padding: 5px;
             border: none;
             border-bottom: 1px solid gray;
+            }
+
+            &:nth-child(7){
+                width: 92%;
             }
         }
 

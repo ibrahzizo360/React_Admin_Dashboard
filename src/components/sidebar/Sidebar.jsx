@@ -21,17 +21,19 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo">Zizadmin</span>
+          <span className="logo">Admin</span>
         </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
+          <Link to="/" style={{ textDecoration: "none" }}>
           <li>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
+          </Link>
           <p className="title">LISTS</p>
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
@@ -39,12 +41,10 @@ const Sidebar = () => {
               <span>Users</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Products</span>
-            </li>
-          </Link>
+            </li>  
           <li>
             <CreditCardIcon className="icon" />
             <span>Orders</span>
@@ -96,6 +96,7 @@ const Sidebar = () => {
           onClick={() => dispatch({ type: "DARK" })}
         ></div>
       </div>
+      <span className="optionText">Toggle light and dark mode</span>
     </div>
   );
 };

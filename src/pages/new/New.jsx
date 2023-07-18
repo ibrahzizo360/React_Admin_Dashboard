@@ -25,12 +25,9 @@ const New = ({ inputs, title }) => {
               }
               alt=""
             />
-          </div>
-          <div className="right">
-            <form>
-              <div className="formInput">
+            <div className="formInput">
                 <label htmlFor="file">
-                  Image: <DriveFolderUploadOutlinedIcon className="icon" />
+                  Upload profile image: <DriveFolderUploadOutlinedIcon className="icon" />
                 </label>
                 <input
                   type="file"
@@ -39,14 +36,16 @@ const New = ({ inputs, title }) => {
                   style={{ display: "none" }}
                 />
               </div>
-
+          </div>
+          <div className="right">
+            <form>
               {inputs.map((input) => (
                 <div className="formInput" key={input.id}>
                   <label>{input.label}</label>
                   <input type={input.type} placeholder={input.placeholder} />
                 </div>
               ))}
-              <button>Send</button>
+              <button>Create</button>
             </form>
           </div>
         </div>

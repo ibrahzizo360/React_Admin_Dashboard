@@ -69,8 +69,8 @@ hr {
     margin: 10px;
 
     .colorOption{
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         border-radius: 5px;
         border: 1px solid #7451f8;
         cursor: pointer;
@@ -82,9 +82,11 @@ hr {
         &:nth-child(2){
             background-color: #333;
         }
-        &:nth-child(3){
-            background-color: darkblue;
-        }
     }
+}
+.optionText{
+    font-size: small;
+    margin: 10px;
+    color:#888;
 }
 }
